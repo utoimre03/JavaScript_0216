@@ -19,14 +19,31 @@ valt1 = 5 /* globális változó */ /* inicializálom */
 //fv1()
 
 function fv2() {
-    for (var index = 0; index < 3; index++) {
+    for (let index = 0; index < 3; index++) {
         console.log(index);
         
     }
-    console.log(index)
+    //console.log(index)
 
 }
-fv2()
+//fv2()
+
+function fv3() {
+    let index = 0; 
+    while (index < 3) {
+        console.log(index);
+        index++;
+    }
+    console.log(index)
+}
+
+const ertek = 1000; /* constant, értéke nem változtatható meg
+                       láthatóság szempontjából úgy máködik, mint a "let"(blokkszintű)
+                       deklaráláskor rögtön kell neki értéket adni */
+const nev = "Valaki"
+/* nev = "más valaki"
+console.log(nev) */
+
 
 
 // Megjegyzések:
